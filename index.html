@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cali Streets</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Bebas Neue', sans-serif;
+}
+
+body{
+    background:white;
+    color:black;
+}
+
+nav{
+    padding:20px;
+    text-align:center;
+    background:white;
+    border-bottom:2px solid #ddd;
+    position:sticky;
+    top:0;
+}
+
+nav button{
+    background:none;
+    border:none;
+    color:black;
+    font-size:28px;
+    margin:0 20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+nav button:hover{
+    transform:scale(1.1);
+    text-decoration:underline;
+}
+
+.page{
+    display:none;
+    padding:40px 20px;
+    text-align:center;
+}
+
+.active{
+    display:block;
+}
+
+.home-image{
+    width:100%;
+    max-width:1000px;
+    border-radius:15px;
+    margin-bottom:25px;
+}
+
+h1{
+    font-size:80px;
+    letter-spacing:4px;
+    margin-bottom:20px;
+}
+
+h2{
+    font-size:36px;
+}
+
+.card{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+.card p{
+    font-size:24px;
+}
+
+.link-btn{
+    display:block;
+    margin:25px auto;
+    text-decoration:none;
+    color:black;
+    font-size:34px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.link-btn:hover{
+    transform:scale(1.1);
+    text-decoration:underline;
+}
+
+.info-section{
+    text-align:left;
+    line-height:2;
+    font-size:24px;
+    max-width:800px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#777;
+}
+
+hr{
+    border:1px solid #ddd;
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('game')">Our Game</button>
+    <button onclick="showPage('info')">Info</button>
+</nav>
+
+<!-- HOME PAGE -->
+<div id="home" class="page active">
+
+    <img
+    src="https://tr.rbxcdn.com/180DAY-68932c2bbe36b513129477190d21000c/768/432/Image/Webp/noFilter"
+    alt="Cali Streets"
+    class="home-image">
+
+    <h1>CALI STREETS</h1>
+
+    <div class="card">
+        <h2>Official Cali Streets Website</h2>
+        <br>
+        <p>
+            Join the streets, build your empire, claim turf,
+            redeem codes, and become one of the biggest names in Cali Streets.
+        </p>
+    </div>
+
+</div>
+
+<!-- OUR GAME PAGE -->
+<div id="game" class="page">
+
+    <h1>OUR GAME</h1>
+
+    <a class="link-btn"
+    href="https://www.roblox.com/games/73771248610396/Cali-Streets"
+    target="_blank">
+    🎮 Play Cali Streets
+    </a>
+
+    <a class="link-btn"
+    href="https://www.roblox.com/communities/35631227/Cali-Streets-Community#!/about"
+    target="_blank">
+    👥 Join Community
+    </a>
+
+    <a class="link-btn"
+    href="https://discord.gg/TYjjqQRVtA"
+    target="_blank">
+    💬 Join Discord
+    </a>
+
+    <a class="link-btn"
+    href="https://share.google/fs2ClfQNokZ3GlXln"
+    target="_blank">
+    📁 Extra Link
+    </a>
+
+</div>
+
+<!-- INFO PAGE -->
+<div id="info" class="page">
+
+    <h1>INFO</h1>
+
+    <div class="card info-section">
+
+        <h2>Codes</h2>
+        <br>
+
+        BOSS — $17,000 Cash (Latest)<br>
+        NIGHTCLUB — $6.5k Cash<br>
+        AIM — $10k Cash<br>
+        ELECTRIC — $16k Cash<br>
+        SPIN — $21k Cash<br>
+        WINTER — $15k Cash<br>
+        SPOOKY — $10k Cash<br>
+        JEWELRY — $12k Cash<br>
+
+        <br><hr><br>
+
+        <h2>Turf Prices</h2>
+        <br>
+
+        Small Turf — $50<br>
+        Medium Turf — $80<br>
+        Large Turf — $120<br>
+
+        <br><hr><br>
+
+        <h2>Made By</h2>
+        <br>
+
+        Noah<br>
+        Discord: Mn05033<br>
+        Roblox: VrrrflareW
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Cali Streets
+</footer>
+
+<script>
+function showPage(pageId){
+    const pages = document.querySelectorAll('.page');
+
+    pages.forEach(page=>{
+        page.classList.remove('active');
+    });
+
+    document.getElementById(pageId).classList.add('active');
+}
+</script>
+
+</body>
+</html>
